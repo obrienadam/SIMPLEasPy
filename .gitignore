@@ -1,0 +1,11 @@
+# Compiled python files
+
+*.pyc
+
+# Emacs back-up files
+
+*~
+
+# Spyder project directory
+
+.spyderproject
