@@ -7,18 +7,20 @@ SIMPLEasPy
 
 Author: Adam O'Brien
 
-This program uses the SIMPLE method (Patankar 1983) to solve simple 
-incompressible Navier-Stokes problems on cartesian meshes. The objective is to 
-use this program to test out surface tension models and immersed boundary 
+This program uses the SIMPLE method (Patankar 1983) to solve simple
+incompressible Navier-Stokes problems on cartesian meshes. The objective is to
+use this program to test out surface tension models and immersed boundary
 methods.
 
 """
 
-from StaggeredGrid import *
+from StaggeredGrid import StaggeredGrid
 
 def main():
-    
-    grid = StaggeredGrid(10, 10)
+
+    grid = StaggeredGrid(20, 20)
+
+    grid.displayGrid()
 
 if __name__ == "__main__":
     main()
