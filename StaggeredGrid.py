@@ -65,6 +65,11 @@ class StaggeredGrid(object):
         self.v = np.zeros((nx - 1, ny))
         self.p = np.zeros((nx - 1, ny - 1))
 
+        # Allocate memory for the predictor steps
+
+        self.ustar = self.u
+        self.vstar = self.v
+
     def displayGrid(self):
 
         plt.plot(self.xNodes, self.yNodes, 'b',
@@ -77,3 +82,10 @@ class StaggeredGrid(object):
         plt.ylabel('y (m)')
 
         plt.show()
+
+class Stencil(object):
+
+    def __init__(self, size):
+
+        self.size = size
+
