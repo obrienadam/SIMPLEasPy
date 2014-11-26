@@ -15,12 +15,13 @@ methods.
 """
 
 from StaggeredGrid import StaggeredGrid
+from SIMPLE import *
 
 def main():
 
     grid = StaggeredGrid(20, 20)
 
-    grid.displayGrid()
+    momentumPredictor(grid)
 
 if __name__ == "__main__":
     main()
